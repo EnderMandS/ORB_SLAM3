@@ -62,6 +62,8 @@ We use [Pangolin](https://github.com/stevenlovegrove/Pangolin) for visualization
 ## OpenCV
 We use [OpenCV](http://opencv.org) to manipulate images and features. Dowload and install instructions can be found at: http://opencv.org. **Required at leat 3.0. Tested with OpenCV 3.2.0 and 4.4.0**.
 
+You can run `./install_opencv.sh` to install the latest version of OpenCV.
+
 ## Eigen3
 Required by g2o (see below). Download and install instructions can be found at: http://eigen.tuxfamily.org. **Required at least 3.1.0**.
 
@@ -83,8 +85,15 @@ We provide some examples to process input of a monocular, monocular-inertial, st
 
 Clone the repository:
 ```
-git clone https://github.com/UZ-SLAMLab/ORB_SLAM3.git ORB_SLAM3
+sudo apt update
+sudo apt install -y ninja-build cmake
+sudo apt install -y libeigen3-dev python3-catkin-tools libgl1-mesa-dev libglew-dev libepoxy-dev
+git clone --depth 1 --recursive https://github.com/UZ-SLAMLab/ORB_SLAM3.git ORB_SLAM3
+cd ORB_SLAM3
+git submodule update --init --recursive --depth 1
 ```
+
+Pangolin can be install by script `./install_pangolin.sh`.
 
 We provide a script `build.sh` to build the *Thirdparty* libraries and *ORB-SLAM3*. Please make sure you have installed all required dependencies (see section 2). Execute:
 ```

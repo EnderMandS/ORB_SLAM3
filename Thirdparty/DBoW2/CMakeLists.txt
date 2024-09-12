@@ -28,14 +28,12 @@ set(SRCS_DUTILS
   DUtils/Random.cpp
   DUtils/Timestamp.cpp)
 
-
-find_package(OpenCV 4 QUIET)
-if(NOT OpenCV_FOUND)
-   find_package(OpenCV 3.0 QUIET)
-   if(NOT OpenCV_FOUND)
-      message(FATAL_ERROR "OpenCV > 3.0 not found.")
-   endif()
-endif()
+find_package(OpenCV 4.10 PATHS ${PROJECT_SOURCE_DIR}/../../opencv/install)
+  if(NOT OpenCV_FOUND)
+     message(FATAL_ERROR "OpenCV > 4.10 not found.")
+  endif()
+MESSAGE("OPENCV VERSION:")
+MESSAGE(${OpenCV_VERSION})
 
 set(LIBRARY_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/lib)
 

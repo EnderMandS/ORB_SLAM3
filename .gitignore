@@ -1,12 +1,3 @@
-# Ignore all
-*
-
-# Unignore all with extensions
-!*.*
-
-# Unignore all dirs
-!*/
-
 CMakeLists.txt.user
 CMakeLists_modified.txt
 
@@ -55,6 +46,19 @@ Examples/Tests/sophus_test
 Examples/ROS/ORB_SLAM3/CMakeLists.txt.user
 Examples/ROS/ORB_SLAM3/build/
 
+Examples_old/Monocular/mono_euroc_old
+Examples_old/Monocular/mono_kitti_old
+Examples_old/Monocular/mono_tum_old
+Examples_old/Monocular/mono_tum_vi_old
+Examples_old/Monocular-Inertial/mono_inertial_euroc_old
+Examples_old/Monocular-Inertial/mono_inertial_tum_vi_old
+Examples_old/RGB-D/rgbd_tum_old
+Examples_old/Stereo/stereo_euroc_old
+Examples_old/Stereo/stereo_kitti_old
+Examples_old/Stereo/stereo_tum_vi_old
+Examples_old/Stereo-Inertial/stereo_inertial_euroc_old
+Examples_old/Stereo-Inertial/stereo_inertial_tum_vi_old
+
 KeyFrameTrajectory.txt
 CameraTrajectory.txt
 kf_*.txt
@@ -91,3 +95,6 @@ my_settings.txt
 borrar/*
 
 */ExecMean.txt
+
+opencv
+Pangolin
