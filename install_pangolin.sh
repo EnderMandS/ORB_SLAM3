@@ -1,4 +1,5 @@
 cd Pangolin
+echo "install" >> ./.gitignore
 mkdir install
 mkdir build
 cd build
