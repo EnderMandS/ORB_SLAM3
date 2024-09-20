@@ -88,7 +88,7 @@ Clone the repository:
 sudo apt update
 sudo apt install -y ninja-build cmake
 sudo apt install -y libeigen3-dev python3-catkin-tools libgl1-mesa-dev libglew-dev libepoxy-dev
-git clone --depth 1 --recursive https://github.com/UZ-SLAMLab/ORB_SLAM3.git ORB_SLAM3
+git clone --depth 1 --recursive https://github.com/EnderMandS/ORB_SLAM3.git ORB_SLAM3
 cd ORB_SLAM3
 git submodule update --init --recursive --depth 1
 ```
